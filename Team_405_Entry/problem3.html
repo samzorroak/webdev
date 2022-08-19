@@ -1,0 +1,178 @@
+<!-- Sameer Choudhary 2106029 -->
+<!-- Create 5 animated buttons.
+    For example : if someone hovers or clicks it, it should show some beautiful animations. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animated Buttons</title>
+    <style>
+        h1
+        {
+            text-align: center;
+            font-size: 250%;
+            background-color: #333333;
+            border-radius: 25px;
+            display: table;
+            margin-left: 35%;
+            color: red;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bolder;
+            margin-top: 35px;
+        }
+        #name
+        {
+            display: table;
+            margin-left: 78%;
+            border-radius: 15px;
+            font-size: large;
+            font-weight: bolder;
+            font-family: 'Courier New', Courier, monospace;
+            color: red;
+            background-color: #333333;
+        }
+        #dvb1, #dvb2, #dvb3, #dvb4, #dvb5
+        {
+            border-radius: 30px;
+            padding: 40px;
+            margin: 25px;
+            float: left;
+            text-align: center;
+            background-color: #333333;
+        }
+        button
+        {
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bolder;
+            color: azure;
+            font-size: 40px;
+            border-radius: 20px;
+            padding: 20px;
+        }
+        /* Animation styling for each button below*/
+        #bt1
+        {
+            background-color: transparent;
+            box-shadow: 0 0 40px 40px blue inset, 0 0 0 0 blue;
+            transition: all 150ms ease-in-out;
+        }
+        #bt1:active
+        {
+            box-shadow: 0 0 6px 0 blue inset, 0 0 8px 8px blue;
+        }
+        #bt2
+        {   
+            background-color: darkorange;
+        }
+        #bt2 span
+        {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+            
+        }
+        #bt2 span:after
+        {
+            content: '\221e';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+        #bt2:hover span
+        {
+            padding-right: 25px;
+        }
+
+        #bt2:hover span:after
+        {
+            opacity: 1;
+            right: 0;
+        }
+        #bt3
+        {
+            background-color: mediumorchid;
+            box-shadow: 0 8px dimgray;
+        }
+        #bt3:active
+        {
+            background-color: violet;
+            box-shadow: 0 4px dimgray;
+            transform: translateY(4px);
+        }
+        #bt4
+        {
+            background-color: plum;
+        }
+        a
+        {
+            display: block;
+            border-radius: 20px;
+            text-align: center;
+            position: relative;
+            transition: all .40s;
+            
+        }
+        a span
+        {
+            position: relative;
+            z-index: 2;
+            
+        }
+        a:after
+        {
+            border-radius: 20px;
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background: tomato;
+            transition: all .40s;
+        }
+        a:hover:after
+        {
+            width: 100%;
+        }
+        #bt5
+        {
+            transition: box-shadow 250ms ease-in-out, color 250ms ease-in-out;
+            background: transparent;
+        }
+        #bt5:active
+        {
+            box-shadow: 0 0 40px 40px red inset;
+        }
+    </style>
+</head>
+<!-- Sameer Choudhary 2106029 -->
+<body style="background-color: black;">
+    <h1>
+        &nbsp;5 animated buttons&nbsp;
+    </h1>
+    <address id="name">&nbsp;By: Sameer Choudhary 2106029&nbsp;</address>
+    <main>
+        <div id="dv">
+            <div id="dvb1">
+                <button id="bt1">Click Me</button>
+            </div>
+            <div id="dvb2">
+                <button id="bt2"><span>Hover Me</span></button>
+            </div>
+            <div id="dvb3">
+                <button id="bt3">Click Me</button>
+            </div>
+            <div id="dvb4">
+                <a href="#"><button id="bt4"><span>Hover Me</span></button></a>
+            </div>
+            <div id="dvb5">
+                <button id="bt5">Click Me</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

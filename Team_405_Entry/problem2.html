@@ -1,0 +1,320 @@
+<!-- Sameer Choudhary 2106029 -->
+<!-- What is the difference between:
+    (a.) let, const & var
+    (b.) double equals (==) & triple equals(===)
+    (c.) Arrow function & normal function -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Differentiating Some Terms</title>
+    <style>
+        body
+        {
+            background-color: darkgreen;
+            color: lavender;
+        }
+        #s1, #s2
+        {
+            display: table;
+        }
+        h1
+        {
+            text-align: center;
+            font-size: 250%;
+            background-color: lime;
+            border-radius: 25px;
+            display: table;
+            margin-left: 25%;
+            color: red;
+        }
+        h1, h2, h3, h4
+        {
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+        }
+        pre
+        {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 18px;
+        }
+        li
+        {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 18px;
+            font-weight: bolder;
+        }
+        #da1, #da2, #da3
+        {
+            margin: 10px;
+            width: 30%;
+            float: left;
+            padding-left: 15px;
+            border: 2px solid lime ;
+        }
+        #db1, #db2
+        {
+            margin: 10px;
+            width: 46%;
+            float: left;
+            padding-left: 15px;
+            border: 2px solid lime ;
+        }
+        #dc1, #dc2
+        {
+            margin: 10px;
+            width: 46%;
+            float: left;
+            padding-left: 15px;
+            border: 2px solid lime ;
+        }
+        #name
+        {
+            display: table;
+            margin-left: 78.5%;
+            border-radius: 15px;
+            font-size: large;
+            font-weight: bolder;
+            font-family: 'Courier New', Courier, monospace;
+            color: red;
+            background-color: lime;
+        }
+    </style>
+</head>
+<!-- Sameer Choudhary 2106029 -->
+<body>
+    <main>
+        <div id="s1">
+            <h1>
+                &nbsp;(a.) Difference between let, const & var&nbsp;
+            </h1>
+            <address id="name">&nbsp;By: Sameer Choudhary 2106029&nbsp;</address>
+            <div id="da1">
+                <h2>Let:</h2>
+                <ul>
+                    <li>Let is used to declare variables and assign value to them.</li> <br>
+                    <li>Scope of a let variable is only block limited.</li> <br>
+                    <li>We can update the variable declared by let.</li> <br>
+                    <li>But we cannot re-declare the variable defined with let keyword.</li>
+                </ul>
+                <pre>
+                JAVASCRIPT CODE SAMPLE:
+                let x = 50;
+                document.write(x"); // This will print 50
+                x = 100;
+                document.write(x"); // This will print 100
+                // let x = 500; -->(Not allowed)
+                function func() 
+                {
+                    do{
+                    let y = 200;
+                        document.write("y"); // This will print 200
+                    }while(y > 1000);
+                    document.write(y); // This will not print
+                }
+                func()
+                </pre>
+                <h2>Output:</h2>
+                <script type="text/javascript">
+                    let x = 50;
+                    document.write("<h4>"+x+"</h4>"); // This will print 50
+                    x = 100;
+                    document.write("<h4>"+x+"</h4>"); // This will print 100
+                    function func() {
+                        do{
+                            let y = 200;
+                            document.write("<h4>"+y+"</h4>"); // This will print 200
+                        }while(y>1000);
+                    document.write("<h4>"+y+"</h4>"); // This will not print as 'y' is defined inside do while block
+                    }
+                    func()
+                </script>
+            </div>
+            <div id="da2">
+                <h2>Const:</h2>
+                <ul>
+                    <li>Const is used to declare Constants with fixed value to them.</li> <br>
+                    <li>Const are just like let except they are immutable.</li> <br>
+                    <li>Scope of a Const variable is only block limited.</li> <br>
+                    <li>We cannot update the constant declared by const.</li>   
+                </ul>
+                <pre>
+                JAVASCRIPT CODE SAMPLE:
+                const a = 50;
+                document.write(x"); // This will print 50
+                // a = 500; -->(Not allowed)
+                if(true)
+                    {
+                        document.write(a); // This will print 50
+                        const b = 100;
+                        document.write(b); // This will print 100
+                    }
+                    document.write(b); // This will not print
+                </pre> <br><br><br><br>
+                <h2>Output:</h2>
+                <script type="text/javascript">
+                    const a = 50;
+                    document.write("<h4>"+a+"</h4>"); // This will print 50
+                    if(true)
+                    {
+                        document.write("<h4>"+a+"</h4>"); // This will print 50
+                        const b = 100;
+                        document.write("<h4>"+b+"</h4>"); // This will print 100
+                    }
+                    document.write("<h4>"+b+"</h4>"); // This will not print
+                </script>
+            </div>
+            <div id="da3">
+                <h2>Var:</h2>
+                <ul>
+                    <li>Var is used to declare variables and assign value to them.</li> <br>
+                    <li>The scope of the var keyword is the global.</li> <br>
+                    <li>We can update the variable declared by var.</li> <br>
+                    <li>We can re-declare the variable defined with var keyword.</li>
+                </ul>
+                <pre>
+                JAVASCRIPT CODE SAMPLE:
+                var v = 100;
+                    document.write(v); // This will print 100
+                    var v = 200;
+                    document.write(v); // This will print 200
+                    if(true)
+                        {
+                            var i = 500;
+                        }
+                    document.write(i); // This will print 500
+                </pre> <br><br><br><br><br>
+                <h2>Output:</h2>
+                <script type="text/javascript">
+                    var v = 100;
+                    document.write("<h4>"+v+"</h4>"); // This will print 100
+                    var v = 200;
+                    document.write("<h4>"+v+"</h4>"); // This will print 200
+                    if(true)
+                        {
+                            var i = 500;
+                        }
+                    document.write("<h4>"+i+"</h4>"); // This will print 500
+                </script>
+            </div>
+        </div>
+        <br><br>
+        <div id="s2">
+            <h1>
+                &nbsp;(b.) double equals (==) & triple equals (===)&nbsp;
+            </h1>
+            <div id="db1">
+                <h2>Double equals (==):</h2>
+                <ul>
+                    <li>Double equals (==) is a comparison operator.</li> <br>
+                    <li>It transforms the operands having the same type before comparison.</li> <br>
+                    <li>It checks whether its two operands are the same or not.</li> <br>
+                    <li>If 2 variables have different data type but same value, then returns True.</li> <br>
+                    <li>A string with no numeric value is converts to NaN, which returns false.</li> <br>
+                </ul>
+                <pre>
+                JAVASCRIPT CODE SAMPLE:
+                var var1 = 100;
+                var var2 = "100";
+                var var3 = 100;
+                document.write(var1==var2);
+                document.write(var1==var3);
+                </pre>
+                <h2>Output:</h2>
+                <script type="text/javascript">
+                    var var1 = 100;
+                    var var2 = "100";
+                    var var3 = 100;
+                    document.write("<h4>"+(var1==var2)+"</h4>");                    
+                    document.write("<h4>"+(var1==var3)+"</h4>");                    
+
+                </script>
+            </div>
+            <div id="db2">
+                <h2>triple equals (===):</h2>
+                <ul>
+                    <li>Triple equals (===) is a strict equality comparison operator.</li> <br>
+                    <li>Returns false for the values which are not of a similar type.</li> <br>
+                    <li>Value are not implicitly converted to some other value before comparison.</li> <br>
+                    <li>If the variable values are of different types, then the values are considered as unequal.</li> <br>
+                    <li>If we compare 2 with “2” using ===, then it will return a false value.</li>
+                </ul>
+                <pre>
+                JAVASCRIPT CODE SAMPLE:
+                var var1 = 100;
+                var var2 = "100";
+                var var3 = 100;
+                document.write(var1===var2);
+                document.write(var1===var3);
+                </pre>
+                <h2>Output:</h2>
+                <script type="text/javascript">
+                    var var1 = 100;
+                    var var2 = "100";
+                    var var3 = 100;
+                    document.write("<h4>"+(var1===var2)+"</h4>");
+                    document.write("<h4>"+(var1===var3)+"</h4>");
+                </script>
+            </div>
+        </div>
+        <br><br>
+        <div id="s3">
+            <h1>
+                &nbsp;(c.) Arrow function & normal function&nbsp;
+            </h1>
+            <div id="dc1">
+                <h2>Arrow Function:</h2>
+                <ul>
+                    <li>Syntax:<pre>
+                    var x = (parameters) =>
+                        // statements
+                    </pre></li> <br>
+                    <li>There are no arguments objects available in arrow functions.</li> <br>
+                    <li>They are only callable and not constructible.</li> <br>
+                    <li>We get Error on trying to construct an arrow functions using the "new" keyword.</li>
+                </ul>
+                <pre>
+                JAVASCRIPT CODE SAMPLE:
+                var sum = (v1,v2) => (v1+v2);
+                document.write(sum(5,5));
+                </pre>
+                <br><br><br>
+                <h2>Output:</h2>
+                <script type="text/javascript">
+                    var sum = (v1,v2) => (v1+v2);
+                    document.write("<h4>"+sum(5,5)+"</h4>");
+                </script>
+            </div>
+            <div id="dc2">
+                <h2>Normal Function:</h2>
+                <ul>
+                    <li>Syntax:<pre>
+                    var x = name(parameters){
+                        //statements
+                    };
+                    </pre></li>
+                    <li>There are arguments objects available in regular functions.</li> <br>
+                    <li>They are constructible and callable.</li> <br>
+                    <li>They can be called using the "new" keyword.</li> <br>
+                </ul>
+                <pre>
+                JAVASCRIPT CODE SAMPLE:
+                var sum = function(v1,v2)
+                {
+                    return (v1+v2);
+                };
+                document.write(sum(4,5));
+                </pre>
+                <h2>Output:</h2>
+                <script type="text/javascript">
+                    var sum = function(v1,v2)
+                    {
+                        return (v1+v2);
+                    };
+                    document.write("<h4>"+sum(4,5)+"</h4>");
+                </script>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

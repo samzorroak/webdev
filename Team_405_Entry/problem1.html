@@ -1,0 +1,136 @@
+<!-- Sameer Choudhary 2106029 -->
+<!-- Mention any 3 ways to centre a div inside another div. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Centering a Div</title>
+    <style>
+        /*Some Basic CSS properties for better look*/
+        #div1, #div2, #div3
+        {
+            background-color: lightcyan;
+            width: 500px;
+            height: 200px;
+            border-radius: 25px;
+        }
+        #d1, #d2, #d3
+        {
+            background-color: #0000a0;
+            width: 75%;
+            height: 75%;
+            text-align: center;
+            border-radius: 25px;
+        }
+        h1
+        {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: navy;
+            border-radius: 25px;
+            text-align: center;
+            font-size: 250%;
+            font-weight: bolder;
+            display: table;
+            margin-left: 25%;
+            color: red;
+        }
+        h2
+        {
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+        }
+        p::first-line
+        {
+            font-size: larger;
+        }
+        p
+        {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: large;
+            font-weight: bold;
+            color: white;
+        }
+        /* Below are the CSS properties to center the div*/
+        #div1
+        {
+            display: flex;
+        }
+        #d1
+        {
+            margin: auto;
+        }
+        #div2
+        {
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+        }
+        #d2
+        {
+            display: inline-block;
+        }
+        
+        #div3
+        {
+            position: relative;
+        }
+        #d3
+        {
+            position: absolute;
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%);
+        }
+        #name
+        {
+            display: table;
+            margin-left: 78.5%;
+            border-radius: 15px;
+            font-size: large;
+            font-weight: bolder;
+            font-family: 'Courier New', Courier, monospace;
+            color: red;
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<!-- Sameer Choudhary 2106029 -->
+<body style="background-color:cornflowerblue">
+    <h1>
+        &nbsp;3 Ways to centre a Div inside another Div:&nbsp;
+    </h1>
+    <address id="name">&nbsp;By: Sameer Choudhary 2106029&nbsp;</address>
+    <!-- Using margin:auto on a flex item will not only horizontally center the element but will also center it vertically -->
+    <h2>Method 1:</h2>
+    <div id="div1">
+        <div id="d1">
+            <p>
+                Using Margin on flex: <br>
+                Added CSS and used display:flex Property on the outer div and margin:auto Property on the inner div.
+            </p>
+        </div>
+    </div>
+
+    <!-- Used display:table-cell property, text-align and vertical-align property on outer div to center inner div  -->
+    <h2>Method 2:</h2>
+    <div id="div2">
+        <div id="d2">
+            <p>
+                Using Table cell: <br>
+                Added CSS and used  display:table-cell Property on the outer div and display:inline-block Property on the inner div.
+            </p>
+        </div>
+    </div>
+
+    <!-- Used position property on inner div and centered it using top, left and transform property -->
+    <h2>Method 3:</h2>
+    <div id="div3">
+        <div id="d3">
+            <p>
+                Using Position: <br>
+                Added CSS and used  position:relative Property on the outer div and position:aboslute Property on the inner div.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
