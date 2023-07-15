@@ -1,0 +1,113 @@
+body {
+  font-family: 'Rubik', sans-serif;
+  margin: 50px 50px 0 50px;
+  background-color: #fe8993;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+}
+.main {
+  flex: 1;
+}
+
+h1 {
+  color: azure;
+  font-size: 5.5rem;
+  font-family: 'Montserrat Alternates', sans-serif;}
+
+h1 > span{
+  color: #b61624;
+}
+
+.up{
+  color: azure;
+  font-size: 2rem;
+}
+
+div.card {
+  width: 45%;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+img.tile-image {
+  height: 200px;
+  float: left;
+  margin-right: 50px;
+}
+
+footer {
+  text-align: right;
+  color: #b61624;
+  clear: both;
+}
+
+.logo {
+  width: 80px;
+}
+
+@media (min-width:600px) and (max-width:800px){
+  .logo {
+    width: 60px;
+  }
+
+  .up{
+    font-size: 1.6rem;
+  }
+
+  h1 {  
+    font-size: 4.5rem;
+  }
+
+  div.card{
+    width:80%;
+    display:block;
+    margin-bottom: 40px;
+    text-align: justify;
+    float: none;
+  }
+
+  img.tile-image {
+    width:80%;
+    margin-bottom: 15px;
+    display: inline-block;
+    object-fit: cover;
+    float: none;
+  }
+}
+
+@media (max-width:599px){
+  .logo {
+    width: 40px;
+  }
+
+  .up{
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
+  div.card{
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+    text-align: justify;
+  }
+
+  img.tile-image {
+    margin-bottom: 10px;
+    width: 100%;
+    display: inline;
+    object-fit: cover;
+  }
+}
