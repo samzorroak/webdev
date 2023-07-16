@@ -3,7 +3,7 @@ let movies = [
     name: "Loki",
     des:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium optio sed a animi nam. Explicabo!",
-    image: "../webdev/Hotstar_Clone/Images/slider 1.PNG"
+    image: "./Images/slider 1.PNG"
   },
   {
     name: "falcon and the winter soldier",
