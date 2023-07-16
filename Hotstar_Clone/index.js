@@ -3,37 +3,37 @@ let movies = [
     name: "Loki",
     des:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium optio sed a animi nam. Explicabo!",
-    image: "Images/slider 1.PNG"
+    image: "webdev/Hotstar_Clone/Images/slider 1.PNG"
   },
   {
     name: "falcon and the winter soldier",
     des:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium optio sed a animi nam. Explicabo!",
-    image: "Images/slider 2.PNG"
+    image: "webdev/Hotstar_Clone/Images/slider 2.PNG"
   },
   {
     name: "Wanda Vision",
     des:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium optio sed a animi nam. Explicabo!",
-    image: "Images/slider 3.PNG"
+    image: "webdev/Hotstar_Clone/Images/slider 3.PNG"
   },
   {
     name: "raya and the last dragon",
     des:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium optio sed a animi nam. Explicabo!",
-    image: "Images/slider 4.PNG"
+    image: "webdev/Hotstar_Clone/Images/slider 4.PNG"
   },
   {
     name: "Luca",
     des:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium optio sed a animi nam. Explicabo!",
-    image: "Images/slider 5.PNG"
+    image: "webdev/Hotstar_Clone/Images/slider 5.PNG"
   },
   {
     name: "Jujutsu Kaisen",
     des:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium optio sed a animi nam. Explicabo!",
-    image: "Images/slider6.jpg"
+    image: "webdev/Hotstar_Clone/Images/slider6.jpg"
   }
 ];
 
