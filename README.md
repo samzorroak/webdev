@@ -15,12 +15,12 @@ Projects included:
 
 🔗 Live Demos:
 
-Facebook Login Clone
+Facebook Login Clone: https://samzorroak.github.io/webdev/Fb_Login_Clone/
 
-Hotstar Clone
+Hotstar Clone: https://samzorroak.github.io/webdev/Hotstar_Clone/
 
-IEEE Entry
+IEEE Entry: https://samzorroak.github.io/webdev/IEEE_Entry/
 
-Team 405 Entry
+Team 405 Entry: https://samzorroak.github.io/webdev/Team_405_Entry/
 
-Descoweb
+Descoweb: https://samzorroak.github.io/webdev/descoweb/
