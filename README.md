@@ -1,4 +1,4 @@
-# webdev: My HTML, CSS, JS projects.
+# My HTML, CSS, JS projects.
 
 A collection of my front-end web development works built using HTML, CSS, and JavaScript. Each project focuses on design accuracy, responsive layouts, and interactive UI elements.
 Projects included:
